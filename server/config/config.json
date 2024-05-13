@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "Matteo",
+    "password": "1234",
+    "database": "gamewebsitedb",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3307"
+  },
+  "test": {
+    "username": "Matteo",
+    "password": "1234",
+    "database": "gamewebsitedb",
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3307"
+  },
+  "production": {
+    "username": "Matteo",
+    "password": "1234",
+    "database": "gamewebsitedb",    
+    "host": "127.0.0.1",
+    "dialect": "mysql",
+    "port": "3307"
+  }
+}
