@@ -6,15 +6,15 @@ module.exports = (sequelize, DataTypes) => {
         },
         genre:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         company:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         system:{
             type: DataTypes.STRING,
-            allowNull: false
+            allowNull: true
         },
         thumbnail:{
             type: DataTypes.STRING,
@@ -22,11 +22,11 @@ module.exports = (sequelize, DataTypes) => {
         },
         release_date:{
             type: DataTypes.DATE,
-            allowNull: false
+            allowNull: true
         },
         description:{
             type: DataTypes.TEXT,
-            allowNull: false
+            allowNull: true
         },
     });
 
