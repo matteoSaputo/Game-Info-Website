@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Games</title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Dashboard</a></li>
+            <li><a href="search.html">Search</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Search Games</h1>
+        <form id="searchForm">
+            <input type="text" id="searchQuery" placeholder="Enter your search query">
+            <select id="searchCriteria">
+                <option value="title">Title</option>
+                <option value="genre">Genre</option>
+                <option value="company">Company</option>
+                <option value="system">System</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+        <div id="searchResults"></div>
+    </div>
+    <script src="../js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,139 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+h1 {
+    margin-top: 0;
+    font-size: 32px;
+}
+
+/* Game scroll container styles */
+#gameScroll {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+/* Game container styles */
+.game-container {
+    text-align: center;
+}
+
+/* Game link styles */
+.game-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Game title styles */
+.game-container p {
+    margin-bottom: 10px;
+}
+
+/* Game image styles */
+.game-link img {
+    max-width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Game image hover styles */
+.game-link img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Game details container styles */
+#gameDetails {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+/* Game image styles */
+#gameDetails img {
+    display: block;
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+/* Game details paragraph styles */
+#gameDetails p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+
+/* Style for individual search result */
+.search-result {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+/* Style for search result title */
+.search-result h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Style for search result thumbnail */
+.search-result img {
+    max-width: 80px; /* Adjust the maximum width of the thumbnail */
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Style for search result description */
+.search-result p {
+    font-size: 12px; /* Adjust the font size of the description */
+    color: #666;
+}
+
+/* Style for no results message */
+#searchResults p {
+    font-size: 14px; /* Adjust the font size of the message */
+    color: #999;
+    text-align: center;
+}
+
