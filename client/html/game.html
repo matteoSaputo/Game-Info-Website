@@ -12,6 +12,8 @@
             <li><a href="index.html">Dashboard</a></li>
             <li><a href="search.html">Search</a></li>
             <li><a href="profile.html">Profile</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="register.html">Register</a></li>
         </ul>
     </nav>
     <div class="container">
@@ -19,6 +21,20 @@
         <!-- Detailed information about the game -->
         <div id="gameDetails"></div>
     </div>
+    <form id="reviewForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <label for="reviewText">Your Review:</label>
+        <textarea id="reviewText" name="reviewText" rows="4" cols="50" required></textarea>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" name="rating" min="1" max="5" required>
+        <button type="submit">Submit Review</button>
+    </form>
     <script src="../js/game.js"></script>
 </body>
+<footer>
+    <h3>Made By: Matteo Saputo</h3>
+</footer>
 </html>

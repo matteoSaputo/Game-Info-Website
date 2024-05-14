@@ -22,6 +22,37 @@ async function getGameDetails() {
     }
 }
 
+document.getElementById('reviewForm').addEventListener('submit', async function(event) {
+    event.preventDefault(); // Prevent form submission
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+    const reviewText = document.getElementById('reviewText').value;
+    const rating = document.getElementById('rating').value;
+    const gameId = getGameIdFromUrl(); // Replace with actual game ID
+    
+    try {
+        const response = await fetch(`http://localhost:3001/game/${gameId}/reviews`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ username, password, reviewText, rating })
+        });
+
+        const data = await response.json();
+
+        if (data.error == null) {
+            alert('Review submitted successfully!');
+        } else {
+            const data = await response.json();
+            alert('Error submitting review: ' + data.error);
+        }
+    } catch (error) {
+        console.error('Error submitting review:', error.message);
+        alert('Error submitting review. Please try again later.');
+    }
+});
+
 // Function to render game details
 async function renderGameDetails() {
     const gameDetails = await getGameDetails();
