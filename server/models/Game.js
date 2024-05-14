@@ -30,5 +30,11 @@ module.exports = (sequelize, DataTypes) => {
         },
     });
 
+    Game.associate = (models) => {
+        Game.hasMany(models.Review, {
+            onDelete: "cascade"
+        })
+    }
+
     return Game;
 };
