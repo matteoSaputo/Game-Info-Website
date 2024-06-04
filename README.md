@@ -10,7 +10,6 @@
 - [Database Schema](#database-schema)
 - [Future Enhancements](#future-enhancements)
 - [Contributors](#contributors)
-- [License](#license)
 
 ## Introduction
 The Game Info Website is a comprehensive platform that allows users to browse, search, and review video games. It features a dynamic dashboard with a scrolling display of game images, user authentication for posting reviews, and a search functionality to find games based on various criteria.
