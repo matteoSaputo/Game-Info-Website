@@ -24,7 +24,7 @@ The Game Info Website is a comprehensive platform that allows users to browse, s
 ## Technologies Used
 - **Frontend**: HTML, CSS, JavaScript
 - **Backend**: Node.js, Express.js
-- **Database**: Sequelize
+- **Database**: MySQL, Sequelize
 - **Authentication**: bcrypt for password hashing
 - **API Integration**: RAWG Video Games Database API
 
